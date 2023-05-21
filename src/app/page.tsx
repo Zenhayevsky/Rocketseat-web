@@ -1,5 +1,7 @@
 import { Button } from './components/Button';
 import { User } from 'lucide-react'
+import nlwlogo from '../assets/nlw-spacetime-logo.svg'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -18,8 +20,38 @@ export default function Home() {
           <User className='h-5 w-5 text-gray- 500'/>
         </div>
 
-        <p className='text-sm leading-snug max-w-[140px]'><span className='underline'>Crie sua conta</span> e salve suas memórias!</p>
+        <p className='text-sm leading-snug max-w-[140px]'>
+          <span className='underline'>Crie sua conta</span> e salve suas memórias!
+        </p>
       </a>
+
+      {/* Hero */}
+      <div className='space-y-5'>
+        <Image alt='NLW spacetime' src={nlwlogo}/>
+        
+        <div className='max-w-[420px] space-y-1'>
+          <h1 className='text-5xl font-bold leading-tight text-gray-50'>Sua cápsula do tempo</h1>
+          <p className='text-lg leading-relaxed'>
+            Colecione momentos marcantes da sua jornada e compartilhe (se quiser) com o mundo!
+          </p>
+        </div>
+
+        <a className='inline-block rounded-full bg-green-500 px-5 py-3 font-alt text-sm uppercase leading-none text-black hover:bg-green-700' href=''>
+          CADASTRAR LEMBRANÇA
+        </a>
+      </div>
+
+      {/* copyright */}
+      <div className='text-sm leading-relaxed text-gray-200'>
+        Feito com 💜 no NLW da {' '}
+        <a
+        target='_blank'
+        rel='noreferrer'
+        className='underline hover:text-gray-100' 
+        href='https://www.rocketseat.com.br'>
+          Rocketseat
+        </a>
+      </div>
     </div>
 
     {/* right */}
