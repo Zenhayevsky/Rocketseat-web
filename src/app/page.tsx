@@ -5,8 +5,11 @@ export default function Home() {
   <main className='grid grid-cols-2 min-h-screen'>
 
     {/* left */}
-    <div className='flex flex-col items-start justify-between px-28 overflow-hidden py-16 relative'>
-      <div className='absolute right-0 top-1/2 h-[288px] w-[526px] rounded-full -translate-y-1/2 translate-x-1/2  bg-purple-700 opacity-50'/>
+    <div className='flex flex-col border-r border-white/10 items-start justify-between px-28 overflow-hidden py-16 relative'>
+      {/* blur */}
+      <div className='absolute right-0 top-1/2 h-[288px] w-[526px] rounded-full -translate-y-1/2 translate-x-1/2  bg-purple-700 opacity-50 blur-full'/>
+      {/* stripes */}
+      <div className='absolute bottom-0 right-3 top-0 w-2 bg-stripes'/>
     </div>
 
     {/* right */}
